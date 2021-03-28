@@ -2,3 +2,14 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #361D5A;
+}
+
+header{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
