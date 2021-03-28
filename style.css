@@ -1,3 +1,16 @@
+@font-face{
+    font-family: "gilroy";
+    src: url(fontes/Gilroy-Light.otf);
+    font-weight: 100;
+}
+
+
+@font-face{
+    font-family: "gilroy";
+    src: url(fontes/Gilroy-ExtraBold.otf);
+    font-weight: 800;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,4 +25,43 @@ header{
     height: 100px;
     align-items: center;
     justify-content: space-between;
+    padding: 0 100px;
+    position: absolute;
+    width: calc(100% - 200px);
+    z-index: 1;
+}
+
+header h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-weight: 800;
+}
+
+header .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header .dropdown svg {
+    fill: white;
+    width: 32px;
+    cursor: pointer;
+}
+
+header .dropdown .dropdown-content{
+    position: absolute;
+    background-color: #190e2a;
+    min-width: 130px;
+    left: -98px;
+    display: none;
+    z-index: 2;
+}
+
+header .dropdown:hover .dropdown-content{
+    display: block;
+}
+
+header .dropdown .dropdown-content{
+    
 }
